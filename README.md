@@ -1,5 +1,7 @@
 # 🐱 MeetingReminder (Windows)
 
+![MeetingReminder screenshot](assets/screenshot.png)
+
 A Windows app that flies a Catppuccin-themed cat across your screen before each
 calendar meeting, trailing a banner with the meeting title — e.g.
 **"Standup in 5 min"**.
