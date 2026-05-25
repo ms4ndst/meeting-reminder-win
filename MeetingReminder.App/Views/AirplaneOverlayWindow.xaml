@@ -28,11 +28,18 @@
             </Border>
 
             <!-- Cat mascot image -->
-            <Image Source="/Assets/cat.png"
-                   Width="80" Height="80"
-                   VerticalAlignment="Center"
-                   Margin="-8,0,0,0"
-                   RenderOptions.BitmapScalingMode="HighQuality"/>
+            <Border CornerRadius="0,8,8,0"
+                    Margin="-8,0,0,0"
+                    VerticalAlignment="Center"
+                    Width="120"
+                    Height="52"
+                    ClipToBounds="True">
+                <Border.Background>
+                    <ImageBrush ImageSource="/Assets/cat_rectangle.png" 
+                                Stretch="UniformToFill"
+                                RenderOptions.BitmapScalingMode="HighQuality"/>
+                </Border.Background>
+            </Border>
         </StackPanel>
     </Canvas>
 </Window>

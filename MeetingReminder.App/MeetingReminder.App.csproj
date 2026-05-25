@@ -35,7 +35,7 @@
 
   <ItemGroup>
     <Resource Include="Assets\meetingreminder.ico" Condition="Exists('Assets\meetingreminder.ico')" />
-    <Resource Include="Assets\cat.png" />
+    <Resource Include="Assets\cat_rectangle.png" />
   </ItemGroup>
 
 </Project>
