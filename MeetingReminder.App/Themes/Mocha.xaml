@@ -1,0 +1,53 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <!-- Catppuccin Mocha — flavor tag for runtime checks -->
+    <sys:String xmlns:sys="clr-namespace:System;assembly=System.Runtime"
+                x:Key="ThemeFlavor">Mocha</sys:String>
+
+    <!-- Backgrounds (deepest -> highest) -->
+    <SolidColorBrush x:Key="CrustBrush"    Color="#11111b"/>
+    <SolidColorBrush x:Key="MantleBrush"   Color="#181825"/>
+    <SolidColorBrush x:Key="BaseBrush"     Color="#1e1e2e"/>
+    <SolidColorBrush x:Key="Surface0Brush" Color="#313244"/>
+    <SolidColorBrush x:Key="Surface1Brush" Color="#45475a"/>
+    <SolidColorBrush x:Key="Surface2Brush" Color="#585b70"/>
+
+    <!-- Overlays -->
+    <SolidColorBrush x:Key="Overlay0Brush" Color="#6c7086"/>
+    <SolidColorBrush x:Key="Overlay1Brush" Color="#7f849c"/>
+    <SolidColorBrush x:Key="Overlay2Brush" Color="#9399b2"/>
+
+    <!-- Text -->
+    <SolidColorBrush x:Key="TextBrush"     Color="#cdd6f4"/>
+    <SolidColorBrush x:Key="Subtext1Brush" Color="#bac2de"/>
+    <SolidColorBrush x:Key="Subtext0Brush" Color="#a6adc8"/>
+
+    <!-- Full Catppuccin Mocha accent palette (all 14) -->
+    <SolidColorBrush x:Key="RosewaterBrush" Color="#f5e0dc"/>
+    <SolidColorBrush x:Key="FlamingoBrush"  Color="#f2cdcd"/>
+    <SolidColorBrush x:Key="PinkBrush"      Color="#f5c2e7"/>
+    <SolidColorBrush x:Key="MauveBrush"     Color="#cba6f7"/>
+    <SolidColorBrush x:Key="RedBrush"       Color="#f38ba8"/>
+    <SolidColorBrush x:Key="MaroonBrush"    Color="#eba0ac"/>
+    <SolidColorBrush x:Key="PeachBrush"     Color="#fab387"/>
+    <SolidColorBrush x:Key="YellowBrush"    Color="#f9e2af"/>
+    <SolidColorBrush x:Key="GreenBrush"     Color="#a6e3a1"/>
+    <SolidColorBrush x:Key="TealBrush"      Color="#94e2d5"/>
+    <SolidColorBrush x:Key="SkyBrush"       Color="#89dceb"/>
+    <SolidColorBrush x:Key="SapphireBrush"  Color="#74c7ec"/>
+    <SolidColorBrush x:Key="BlueBrush"      Color="#89b4fa"/>
+    <SolidColorBrush x:Key="LavenderBrush"  Color="#b4befe"/>
+
+    <!-- Semantic aliases — rewritten by the accent picker. -->
+    <SolidColorBrush x:Key="AccentBrush"   Color="#cba6f7"/>  <!-- = Mauve -->
+    <SolidColorBrush x:Key="SuccessBrush"  Color="#a6e3a1"/>
+    <SolidColorBrush x:Key="WarningBrush"  Color="#f9e2af"/>
+    <SolidColorBrush x:Key="ErrorBrush"    Color="#f38ba8"/>
+    <SolidColorBrush x:Key="FocusBrush"    Color="#b4befe"/>  <!-- = Lavender -->
+    <SolidColorBrush x:Key="CaretBrush"    Color="#f5e0dc"/>  <!-- = Rosewater -->
+
+    <!-- Selection background (Overlay2 @ ~25%) -->
+    <SolidColorBrush x:Key="SelectionBrush" Color="#9399b2" Opacity="0.25"/>
+
+</ResourceDictionary>
