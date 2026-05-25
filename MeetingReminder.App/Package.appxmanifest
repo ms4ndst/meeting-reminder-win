@@ -14,7 +14,7 @@
         <DisplayName>MeetingReminder</DisplayName>
         <PublisherDisplayName>MeetingReminder Developer</PublisherDisplayName>
         <Logo>Assets\StoreLogo.png</Logo>
-        <Description>Flies an airplane across your screen before meetings.</Description>
+        <Description>Flies a cat across your screen before meetings.</Description>
     </Properties>
 
     <Dependencies>

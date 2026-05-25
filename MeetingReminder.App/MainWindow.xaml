@@ -29,7 +29,7 @@
         <!-- Title strip -->
         <Border Background="{DynamicResource CrustBrush}" Padding="20,14">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Text="✈️" FontSize="20" VerticalAlignment="Center" Margin="0,0,8,0"/>
+                <TextBlock Text="🐱" FontSize="20" VerticalAlignment="Center" Margin="0,0,8,0"/>
                 <TextBlock Text="MeetingReminder" FontSize="18" FontWeight="SemiBold"
                            Foreground="{DynamicResource TextBrush}"/>
                 <TextBlock Text="Never miss a meeting again"
@@ -87,7 +87,7 @@
                     <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="0,0,0,12"
                                 Visibility="{Binding HasCalendarAccess, Converter={StaticResource BoolToVis}}">
                         <Button Content="Refresh" Command="{Binding RefreshUpcomingCommand}" Margin="0,0,8,0"/>
-                        <Button Content="Test airplane" Command="{Binding TestAirplaneCommand}"
+                        <Button Content="Test cat" Command="{Binding TestAirplaneCommand}"
                                 Style="{StaticResource PrimaryButton}"/>
                     </StackPanel>
 
@@ -153,8 +153,8 @@
 
                         <Border Style="{StaticResource Card}">
                             <StackPanel>
-                                <TextBlock Text="Plane speed" Style="{StaticResource HeaderTextBlock}"/>
-                                <TextBlock Text="How long the airplane takes to cross the screen"
+                                <TextBlock Text="Cat speed" Style="{StaticResource HeaderTextBlock}"/>
+                                <TextBlock Text="How long the cat takes to cross the screen"
                                            Style="{StaticResource LabelTextBlock}"/>
                                 <StackPanel Orientation="Horizontal" Margin="0,4,0,0">
                                     <Button Content="Slow" Margin="0,0,8,0"
@@ -219,7 +219,7 @@
                             <StackPanel>
                                 <TextBlock Text="About" Style="{StaticResource HeaderTextBlock}"/>
                                 <TextBlock Style="{StaticResource SubtleTextBlock}"
-                                           Text="MeetingReminder — flies an airplane across your screen before meetings."/>
+                                           Text="MeetingReminder — flies a cat across your screen before meetings."/>
                                 <TextBlock Style="{StaticResource SubtleTextBlock}" Margin="0,4,0,0"
                                            Text="Windows port of conniexu444/meeting-reminder."/>
                                 <TextBlock Style="{StaticResource SubtleTextBlock}" Margin="0,4,0,0"
@@ -272,7 +272,7 @@
                         Style="{StaticResource StatusPill}"
                         Background="{DynamicResource Surface0Brush}"
                         Visibility="{Binding IsFlying, Converter={StaticResource BoolToVis}}">
-                    <TextBlock Text="✈️ Flying!"
+                    <TextBlock Text="🐱 Flying!"
                                Foreground="{DynamicResource MauveBrush}"
                                FontWeight="SemiBold" FontSize="12"/>
                 </Border>

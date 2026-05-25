@@ -14,7 +14,7 @@ public sealed class NotificationService
     }
 
     public void NotifyMeetingSoon(string title, int minutes)
-        => Notify($"✈️ {title} in {minutes} min", "Your airplane is flying!");
+        => Notify($"🐱 {title} in {minutes} min", "Your cat is flying!");
 
     private void Notify(string title, string body)
     {

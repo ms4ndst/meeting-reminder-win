@@ -68,10 +68,10 @@ Or open `MeetingReminder.sln` in Visual Studio and press **F5**.
    - Click **Google Calendar** to sign in via your browser (OAuth2)
 3. That's it — every 60 seconds the app checks your calendar and shows the
    flying cat ~5 minutes before each meeting
-4. The **Test airplane** button triggers the animation on demand
+4. The **Test cat** button triggers the animation on demand
 
 Closing or minimising the window sends it to the system tray. Right-click the
-tray icon for quick actions (Test airplane, Settings, Exit).
+tray icon for quick actions (Test cat, Settings, Exit).
 
 ---
 
@@ -115,7 +115,7 @@ and delete cached tokens.
 | What                            | Where                        |
 |---------------------------------|------------------------------|
 | Alert timing (1–30 min)         | Settings → Alert slider      |
-| Flight speed (Slow/Normal/Fast) | Settings → Plane speed       |
+| Flight speed (Slow/Normal/Fast) | Settings → Cat speed         |
 | Google Client ID / Secret       | Settings → Google Calendar   |
 | Theme (Mocha / Latte)           | Settings → Appearance        |
 | Accent colour (14 options)      | Settings → Accent picker     |

@@ -49,7 +49,7 @@ public sealed class TrayManager : IDisposable
         var menu = new ContextMenu();
         menu.Items.Add(NewItem("Open MeetingReminder", () => ShowMainWindow(), isHeader: true));
         menu.Items.Add(new Separator());
-        menu.Items.Add(NewItem("Test airplane", () => _vm.TestAirplane()));
+        menu.Items.Add(NewItem("Test cat", () => _vm.TestAirplane()));
         menu.Items.Add(new Separator());
         menu.Items.Add(NewItem("Settings…", OpenSettingsTab));
         menu.Items.Add(new Separator());
