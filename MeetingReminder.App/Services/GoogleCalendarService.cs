@@ -104,10 +104,12 @@ public sealed class GoogleCalendarService : ICalendarService, IDisposable
         {
             var request = _service.Events.List("primary");
             request.TimeMinDateTimeOffset = DateTimeOffset.Now;
-            request.TimeMaxDateTimeOffset = DateTimeOffset.Now.AddHours(1);
+            // Fetch events until end of day (23:59:59) to get the whole day's events
+            var endOfDay = DateTimeOffset.Now.Date.AddDays(1).AddSeconds(-1);
+            request.TimeMaxDateTimeOffset = endOfDay;
             request.SingleEvents = true;
             request.OrderBy = EventsResource.ListRequest.OrderByEnum.StartTime;
-            request.MaxResults = 20;
+            request.MaxResults = 50; // Increased to handle a full day of events
 
             var events = await request.ExecuteAsync();
 

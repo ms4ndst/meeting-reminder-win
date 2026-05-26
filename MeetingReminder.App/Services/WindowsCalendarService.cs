@@ -52,8 +52,11 @@ public sealed class WindowsCalendarService : ICalendarService
         try
         {
             var now = DateTimeOffset.Now;
+            // Fetch events until end of day to get the whole day's events
+            var endOfDay = now.Date.AddDays(1).AddSeconds(-1);
+            var timeSpan = endOfDay - now;
             var appointments = await _store.FindAppointmentsAsync(
-                now, TimeSpan.FromHours(1));
+                now, timeSpan);
 
             return appointments.Select(a => new CalendarEvent(
                 Id: a.LocalId ?? Guid.NewGuid().ToString(),
