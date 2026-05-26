@@ -238,22 +238,7 @@ public sealed class GoogleCalendarService : ICalendarService, IDisposable
 
     private static string FormatTitle(Event e)
     {
-        var fallback = string.IsNullOrWhiteSpace(e.Summary) ? "Untitled Meeting" : e.Summary;
-
-        var attendees = (e.Attendees ?? Enumerable.Empty<EventAttendee>())
-            .Where(a => a.Self != true && !string.IsNullOrEmpty(a.DisplayName))
-            .Select(a => a.DisplayName!)
-            .Take(3)
-            .ToList();
-
-        if (attendees.Count == 0) return fallback;
-
-        return attendees.Count switch
-        {
-            1 => $"Meeting with {attendees[0]}",
-            2 => $"Meeting with {attendees[0]} and {attendees[1]}",
-            _ => $"Meeting with {attendees[0]}, {attendees[1]} +{attendees.Count - 2} more"
-        };
+        return string.IsNullOrWhiteSpace(e.Summary) ? "Untitled Meeting" : e.Summary;
     }
 
     public void Dispose()

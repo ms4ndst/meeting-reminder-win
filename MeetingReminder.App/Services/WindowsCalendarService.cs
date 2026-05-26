@@ -73,31 +73,10 @@ public sealed class WindowsCalendarService : ICalendarService
     }
 
     /// <summary>
-    /// Prefer "Meeting with <organizer>" when available; fall back to the appointment subject.
+    /// Returns the appointment subject or "Untitled Meeting" if empty.
     /// </summary>
     private static string FormatTitle(Appointment a)
     {
-        var fallback = string.IsNullOrWhiteSpace(a.Subject) ? "Untitled Meeting" : a.Subject;
-
-        if (a.Invitees is { Count: > 0 })
-        {
-            var names = a.Invitees
-                .Select(i => i.Address)
-                .Where(n => !string.IsNullOrEmpty(n))
-                .Take(3)
-                .ToList();
-
-            if (names.Count > 0)
-            {
-                return names.Count switch
-                {
-                    1 => $"Meeting with {names[0]}",
-                    2 => $"Meeting with {names[0]} and {names[1]}",
-                    _ => $"Meeting with {names[0]}, {names[1]} +{names.Count - 2} more"
-                };
-            }
-        }
-
-        return fallback;
+        return string.IsNullOrWhiteSpace(a.Subject) ? "Untitled Meeting" : a.Subject;
     }
 }

@@ -138,6 +138,7 @@ public sealed partial class MainViewModel : ViewModelBase
             _activeCalendar = _googleCalendar;
             StatusText = "Google Calendar restored — monitoring for meetings";
             StartPolling();
+            await RefreshUpcomingAsync();
         }
     }
 

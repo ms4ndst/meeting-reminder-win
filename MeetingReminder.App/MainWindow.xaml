@@ -96,7 +96,9 @@
                             Visibility="{Binding HasCalendarAccess, Converter={StaticResource BoolToVis}}">
                         <ListBox ItemsSource="{Binding UpcomingMeetings}"
                                  Background="{DynamicResource MantleBrush}"
-                                 BorderThickness="0">
+                                 BorderThickness="0"
+                                 ScrollViewer.CanContentScroll="False"
+                                 ScrollViewer.VerticalScrollBarVisibility="Auto">
                             <ListBox.ItemTemplate>
                                 <DataTemplate>
                                     <Grid Margin="8,6">
