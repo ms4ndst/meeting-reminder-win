@@ -62,12 +62,11 @@ public partial class App : Application
 
             var cfg = Config.Load();
 
-            // Sync StartWithWindows with reality.
+            // Sync registry to match the config setting.
             var registryHasEntry = StartupManager.IsEnabled();
             if (cfg.StartWithWindows != registryHasEntry)
             {
-                cfg = cfg with { StartWithWindows = registryHasEntry };
-                Config.Save(cfg);
+                StartupManager.Set(cfg.StartWithWindows);
             }
 
             // Apply theme + accent before any window is shown.
