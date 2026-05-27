@@ -35,7 +35,7 @@
                     Height="52"
                     ClipToBounds="True">
                 <Border.Background>
-                    <ImageBrush ImageSource="/Assets/cat_rectangle.png" 
+                    <ImageBrush ImageSource="/Assets/cat_rectangle_tran.png" 
                                 Stretch="UniformToFill"
                                 RenderOptions.BitmapScalingMode="HighQuality"/>
                 </Border.Background>
